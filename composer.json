@@ -1,13 +1,5 @@
 {
-    "name": "Desafio Gama Academy JobsNET",
-    "description": "Banco de currículos criado para o desafio final do programa Start Tech da Gama Academy, utilizando HTML, CSS, JS e Bootstrap para o frontend e PHP e SQL para o backend.",
-    "authors": [
-        {
-            "name": "Stella Oliveira",
-            "email": "stella.1609@gmail.com"
-        }
-    ],
     "require": {
         "php": ">=5.2.8"
-  	}
+  }
 }
