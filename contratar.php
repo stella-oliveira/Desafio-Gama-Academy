@@ -13,7 +13,7 @@
     WHERE cargo LIKE '%$filtro%' ORDER BY nome";
 
     $consulta = mysqli_query($conexao, $sql);
-    $registros = mysqli_num_rows(mysqli_result $consulta);
+    $registros = mysqli_num_rows(mysqli_result ($consulta);
 
 ?>
 
