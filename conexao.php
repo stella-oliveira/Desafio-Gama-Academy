@@ -1,9 +1,17 @@
 <?php
 
-    $servidor = env('DB_HOST', 'remotemysql.com');
-    $usuario = env('DB_USERNAME', 'VeBMhNuNpU'),
-    $senha = env('DB_PASSWORD', 'A4azChwX0M'),
-    $database = env('DB_DATABASE', 'VeBMhNuNpU');
+    // Conexão local
+//    $servidor = "localhost";
+//    $usuario = "root";
+//    $senha = "";
+//    $database = "desafiogama";
+//    $conexao = mysqli_connect($servidor, $usuario, $senha, $database);
+
+    // Conexão remota
+    $servidor = 'remotemysql.com';
+    $usuario = 'VeBMhNuNpU';
+    $senha = 'A4azChwX0M';
+    $database = 'VeBMhNuNpU';
     $conexao = mysqli_connect($servidor, $usuario, $senha, $database);
 
     if(!$conexao){
