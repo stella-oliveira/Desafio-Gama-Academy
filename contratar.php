@@ -8,12 +8,12 @@
 
     $filtro = isset($_GET['filtro']) ? $_GET['filtro'] : "";
 
-    $sql = "SELECT pessoa.nome, cargo.nome, pessoa.prof, DATE_FORMAT(pessoa.dataNascimento, '%d/%m/%Y'), estadocivil.nome, sexo.nome, 
+    $sql = "SELECT pessoa.nome, cargo.nome, pessoa.prof, DATE_FORMAT(pessoa.dataNascimento, '%d/%m/%Y'), estadoCivil.nome, sexo.nome, 
     pessoa.rua, pessoa.numero, pessoa.bairro, pessoa.cidade, pessoa.uf, pessoa.cep, pessoa.telefone1, pessoa.telefone2, pessoa.celular, 
     pessoa.contato, pessoa.email, pessoa.identidade, pessoa.cpf, veiculo.nome, habilitacao.nome
     FROM pessoa
     INNER JOIN cargo ON pessoa.cargo_id = cargo.id
-    INNER JOIN estadocivil ON pessoa.estadoCivil_id = estadocivil.id
+    INNER JOIN estadoCivil ON pessoa.estadoCivil_id = estadoCivil.id
     INNER JOIN sexo ON pessoa.sexo_id = sexo.id
     INNER JOIN veiculo ON pessoa.veiculo_id = veiculo.id
     INNER JOIN habilitacao ON pessoa.habilitacao_id = habilitacao.id 
