@@ -20,7 +20,7 @@
     WHERE cargo.nome LIKE '%$filtro%' ORDER BY pessoa.nome";
 
     $consulta = mysqli_query($conexao, $sql);
-    $registros = mysql_num_rows($consulta);
+    $registros = mysqli_num_rows($consulta);
 
 ?>
 
