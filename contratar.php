@@ -13,7 +13,7 @@
     INNER JOIN sexo ON pessoa.sexo_id = sexo.id
     INNER JOIN veiculo ON pessoa.veiculo_id = veiculo.id
     INNER JOIN habilitacao ON pessoa.habilitacao_id = habilitacao.id 
-    WHERE cargo LIKE '%$filtro%' ORDER BY nome";
+    WHERE cargo LIKE '%$filtro%' ORDER BY pessoa.nome";
 
     $consulta = mysqli_query($conexao, $sql);
     $registros = mysqli_num_rows($consulta);
