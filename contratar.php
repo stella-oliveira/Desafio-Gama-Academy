@@ -1,6 +1,10 @@
 <?php
 
-	include_once("conexao.php");
+    $servidor = 'remotemysql.com';
+    $usuario = 'VeBMhNuNpU';
+    $senha = 'A4azChwX0M';
+    $database = 'VeBMhNuNpU';
+    $conexao = mysqli_connect($servidor, $usuario, $senha, $database);
 
     $filtro = isset($_GET['filtro']) ? $_GET['filtro'] : "";
 
